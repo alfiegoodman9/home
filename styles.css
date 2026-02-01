@@ -1,0 +1,89 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+}
+
+p {
+  font-size: 16pt;
+}
+
+
+.topnav {
+  background-color: grey;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.topnav .linkedin {
+  background-color: #0a66c2;
+  overflow: hidden;
+  max-width: 100%;
+  float: right;
+}
+
+.topnav .linkedin.linkedin:hover {
+  background-color: #407ab4;
+  overflow: hidden;
+  max-width: 100%;
+  float: right;
+}
+
+.topnav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  float: left;
+  border-radius: 20px;
+}
+
+.topnav a.active {
+  color: white;
+  background-color: black;
+}
+
+.topnav a:hover {
+  color: white;
+  background-color: darkgrey;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;    /* items wrap to new lines when there's no space */
+  gap: 40px;          /* space between icons */
+  justify-content: center; /* center the icons on each row */
+  padding: 10px;
+}
+
+.skills img {
+  width: 200px;       /* simple, predictable size */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.profile img {
+  max-width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.profile p {
+  margin: 0;
+}
+
+/* optional: smaller icons on very small screens */
+@media (max-width: 480px) {
+  .skills img {
+    width: 100px;
+  }
+}
